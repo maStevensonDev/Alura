@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<h1>¿Alcohol o gasolina?</h1>
+<br>
+
+<!-- Esto es un comentario -->
+<!-- Se pueden hacer br cpn variables var saltoLinea = "<br> -->
+
+1.- Si un carro tiene un tanque de 40 litros.
+Usando gasolina y consumiendo todo el tanque se hace un camino de 480 kilómetros. ¿Cuál es el consumo de gasolina?.
+
+<br>
+
+2.- El mismo tanque de 40 litros hace un recorrido de 300 kilómetros. ¿Cuál es el consumo de alcohol/km?.
+
+<br><br>
+
+<!-- Funciones (function)-->
+
+<script>
+    function saltarlinea(){
+
+        document.write("<br>"); 
+        document.write("<br>"); 
+        document.write("<hr>"); 
+        document.write("<br>");  
+        
+    }
+
+    function imprimir(frase){
+
+        document.write("<big>" + frase + "</big>"); 
+        saltarlinea(); 
+        
+
+    }
+    
+    var tanque = 40;
+    var caminoGas = 480;
+    var consumo = caminoGas / tanque;
+
+    imprimir("El consumo es " + consumo + " litros de gasolina con un tanque de " + tanque + " en " + caminoGas + " kilometros");
+
+    
+    
+    var caminoAl = 300;
+    var consumo = caminoAl / tanque;
+
+    imprimir("El consumo es " + consumo + " litros de alcohol con un tanque de " + tanque + " en " + caminoAl + " kilometros");
+    
+</script>
+
+
+
+
+<!-- <div>
+    <button class="task-edit-mode settings-box-item-darkmode">
+        
+        Modo nocturno
+    </button>
+</div> -->
+
+<!--
+<table>
+    <thead>
+      <tr>
+        <th>Header content 1</th>
+        <th>Header content 2</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Footer content 1</td>
+        <td>Footer content 2</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Body content 1</td>
+        <td>Body content 2</td>
+      </tr>
+    </tbody>
+  </table>
+-->

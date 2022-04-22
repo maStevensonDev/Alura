@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<h1>INDICE DE MASA CORPORAL ( IMC )</h1>
+
+
+
+<script>
+   function saltarlinea(){
+    
+    document.write("<br>"); 
+    document.write("<br>"); 
+    document.write("<hr>"); 
+    document.write("<br>");  
+
+   }
+
+    function imprimir(frase){
+    
+    document.write("<hr>"); 
+    document.write("<br>"); 
+    document.write("<big>" + frase + "</big>"); 
+    saltarlinea(); 
+
+   }   
+
+   function calcularImc(peso,altura,nombre){
+    
+    imc = peso / ( altura * altura );
+    imprimir( "El IMC de " + nombre + " es .. " + imc );
+    
+   }   
+
+   imcPersona = calcularImc(71,1.70," MARCO");
+ 
+    
+
+</script>  
