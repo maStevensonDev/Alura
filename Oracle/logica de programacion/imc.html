@@ -1,36 +1,45 @@
 <meta charset="UTF-8">
-<h1>INDICE DE MASA CORPORAL ( IMC )</h1>
 
+<head>
+   <title>IMC</title>
 
+ <h1>INDICE DE MASA CORPORAL ( IMC )</h1>
 
-<script>
-   function saltarlinea(){
+   <script>
+      function saltarlinea(){
     
-    document.write("<br>"); 
-    document.write("<br>"); 
-    document.write("<hr>"); 
-    document.write("<br>");  
+       document.write("<br>"); 
+       document.write("<br>"); 
+       document.write("<hr>"); 
+       document.write("<br>");  
 
-   }
+      }
 
-    function imprimir(frase){
+      function imprimir(frase){
     
-    document.write("<hr>"); 
-    document.write("<br>"); 
-    document.write("<big>" + frase + "</big>"); 
-    saltarlinea(); 
+         document.write("<hr>"); 
+         document.write("<br>"); 
+         document.write("<big>" + frase + "</big>"); 
+         saltarlinea(); 
 
-   }   
+      }   
 
-   function calcularImc(peso,altura,nombre){
+      function calcularImc(peso,altura){
     
-    imc = peso / ( altura * altura );
-    imprimir( "El IMC de " + nombre + " es .. " + imc );
-    
-   }   
+       return (peso / ( altura * altura ));
+       
+      }
 
-   imcPersona = calcularImc(71,1.70," MARCO");
- 
-    
+      nombrePersona = prompt("Ingresa tu nombre")
+      pesoPersona = prompt("Ingresa tu Peso (EJEMPLO 80)")
+      alturaPersona = prompt("Ingresa tu Altura (EJEMPLO 1.92)")
 
-</script>  
+      imcCalculo = calcularImc(pesoPersona,alturaPersona);
+
+      imprimir( "El IMC de " + nombrePersona + " es: " + imcCalculo );
+    
+   </script>  
+
+</head>
+
+
