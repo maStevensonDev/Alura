@@ -30,13 +30,39 @@
        
       }
 
-      nombrePersona = prompt("Ingresa tu nombre")
-      pesoPersona = prompt("Ingresa tu Peso (EJEMPLO 80)")
-      alturaPersona = prompt("Ingresa tu Altura (EJEMPLO 1.92)")
+      nombrePersona = prompt( "Ingresa tu nombre" )
+      pesoPersona = prompt( "Ingresa tu Peso (EJEMPLO 80)" )
+      alturaPersona = prompt( "Ingresa tu Altura (EJEMPLO 1.92)" )
 
-      imcCalculo = calcularImc(pesoPersona,alturaPersona);
+      imcCalculo = Math.round( calcularImc ( pesoPersona,alturaPersona ) );
 
       imprimir( "El IMC de " + nombrePersona + " es: " + imcCalculo );
+
+      if ( imcCalculo < 18.5 ){
+        
+        imprimir( "IMC con insuficiencia ponderal" );
+
+       }
+   
+       if ( imcCalculo > 18.5 && imcCalculo < 24.9 ){
+        
+        imprimir( "IMC con intervalo normal" );
+        
+       }
+
+       if ( imcCalculo == 25 ){
+        
+        imprimir( "SOBREPESO" );
+        
+       }
+
+       if ( imcCalculo > 25 && imcCalculo < 29.9  ){
+        
+        imprimir( "PREOBESIDAD CONSULTA CON UN NUTRISIONISTA" );
+        
+       }
+                
+
     
    </script>  
 

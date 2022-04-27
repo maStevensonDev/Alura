@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<head>
+    
+   <title>LOTERIA</title>
+
+ <h1> JUEGO ADVINA EL NUMERO !!! ( KINO VERSION FRUNA )</h1>
+
+  <script>
+      function saltarlinea(){
+    
+       document.write("<br>"); 
+       document.write("<br>"); 
+       document.write("<hr>"); 
+       document.write("<br>");  
+
+      }
+
+      function imprimir(frase){
+    
+         document.write("<hr>"); 
+         document.write("<br>"); 
+         document.write("<big>" + frase + "</big>"); 
+         saltarlinea(); 
+
+      }
+
+      function sorteo(n){
+    
+       return Math.round( Math.random() * 10 )
+
+      }
+
+      var numeroPensado =  sorteo(10);
+      var numeroLanzado = parseInt( prompt ( "INGRESE UN NUMERO ENTRE 0-10" ) )
+
+     if ( numeroPensado == numeroLanzado ){
+
+        imprimir( "ADIVINASTE EL NUMERO FELICITACIONES !!!! " )
+        
+      }
+      else{
+
+        imprimir( "EL NUMERO QUE PENSASTE ES INCORRECTO...... EL NUMERO REAL ES " + numeroPensado )
+
+      }
+          
+
+
+
+
+    </script>  
+
+</head>
+
+

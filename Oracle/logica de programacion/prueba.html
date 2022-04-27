@@ -1,17 +1,52 @@
 <meta charset="UTF-8">
 
-
 <script>
-    function mostrarAlerta(mensaje) {
-        alert("***" + mensaje + "***");
+    function saltarLinea() {
+        document.write("<br>");
     }
 
-    var edad1 = 10;
-    var edad2 = 20;
-    var edad3 = 30;
-    var totalEdades = edad1 + edad2 + edad3;
-    var promedioEdades = totalEdades/3;
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
 
-    mostrarAlerta("Total de edades es " + totalEdades);
-    mostrarAlerta("El promedio de las edades es " +  promedioEdades);
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if(edad >= 18) {
+        if(tieneLicencia == "S") {
+            imprimir("Puedes conducir");
+        }
+    }
+
+    if(edad < 18) {
+        imprimir("No puedes conducir");
+    }
+
 </script>
+
+
+<!-- 
+El elemento <link> siempre debe ir dentro del <header> de tu documento. Este toma dos atributos,
+rel="stylesheet", que indica que es la hoja de estilo del documento, y href, 
+que contiene la ruta al archivo de la hoja de estilo:
+
+<link rel="stylesheet" href="my-css-file.css">
+
+
+El elemento <script> también debería ir en el head, y debería incluir un atributo src con la ruta al 
+JavaScript que quieres cargar, y defer, que básicamente le dice al navegador que cargue el 
+JavaScript al mismo tiempo que el HTML de la página.
+
+<script src="my-js-file.js"></script>
+
+
+establecer el idioma princiapl del comuento
+
+<html lang="es-MX">
+    
+
+
+
+
+-->

@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<head>
+ <html>
+   <title>PUEDES MANEJAR ??</title>
+   <script>
+ 
+     function saltarLinea() {
+         document.write("<br>");
+     }
+ 
+     function imprimir(frase) {
+         document.write(frase);
+         saltarLinea();
+     }
+ 
+     var edad = parseInt(prompt("¿Cuál es tu edad?"));
+     var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+ 
+    if ( edad >=18 && tieneLicencia == "S" ){
+      
+      imprimir( "PUEDES CONDUCIR BRAVO !!! " )
+
+     }else(
+
+      imprimir( "NO PUEDES MANEJAR " )
+
+     )
+    
+   </script>
+ 
+ </html>
+
+</head>
+
+
