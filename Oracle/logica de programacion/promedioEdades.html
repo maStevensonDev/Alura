@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<head>
+    
+   <title>PROMEDIO DE EDADES</title>
+
+ <h1> CALCULO DEL PROMEDIO DE EDADES DE UNA FAMILIA</h1>
+
+  <script>
+      function saltarlinea(){
+    
+       document.write("<br>"); 
+       document.write("<br>"); 
+       document.write("<hr>"); 
+       document.write("<br>");  
+
+      }
+
+      function imprimir(frase){
+    
+         document.write("<hr>"); 
+         document.write("<br>"); 
+         document.write("<big>" + frase + "</big>"); 
+         saltarlinea(); 
+
+      }
+
+      var miembrosFamilia = parseInt( prompt ( "INGRESA LA CANTIDAD DE MIEMBROS DE TU FAMILIA " ) );
+      var contardor = 1;
+      var totalEdad = 0;
+
+      while ( contardor <= miembrosFamilia ) {
+
+        
+        edad = parseInt ( prompt ( "INGRESA LAS EDAD DEL FAMILIAR " ) );
+        var totalEdad = totalEdad + edad
+        //var mediaEdades = totalEdad / miembrosFamilia; me da el mismo resultado estando este calculo afuera como dentro del while
+        contardor++;
+
+      }
+
+      var mediaEdades = totalEdad / miembrosFamilia;
+
+      imprimir( "LA MEDIA DE LAS EDADES ES DE " + mediaEdades );
+
+
+    </script>  
+
+</head>

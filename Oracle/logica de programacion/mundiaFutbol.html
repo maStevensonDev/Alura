@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<head>
+    
+   <title>COPA DEL MUNDO</title>
+
+ <h1> MUNDIAL DE FUTBOL FIFA</h1>
+
+  <script>
+      function saltarlinea(){
+    
+       document.write("<br>"); 
+       document.write("<br>"); 
+       document.write("<hr>"); 
+       document.write("<br>");  
+
+      }
+
+      function imprimir(frase){
+    
+         document.write("<hr>"); 
+         document.write("<br>"); 
+         document.write("<big>" + frase + "</big>"); 
+         saltarlinea(); 
+
+      }
+
+      var annioMundial = 1930;
+      var limite = parseInt( prompt( " INGRESE EL ANÑO LIMITE PARA CALCULAR LOS MUNDIALES" ) )
+    
+      alert( "PRIMER Mundial de la FIFA " + annioMundial )
+      
+
+      while ( annioMundial <= limite ) {
+
+        imprimir( "Mundial de la FIFA " + annioMundial )
+        annioMundial = annioMundial + 4 ;
+        if (annioMundial > limite) {
+
+            imprimir("PROXIMOS MUNDIALES " + annioMundial )
+            
+        }
+        2022
+      }
+
+     imprimir( "FIN" );
+
+
+
+
+    </script>  
+
+</head>
+
+

@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<head>
+    
+   <title>MULTIPLICACION</title>
+
+ <h1> Tablas de multiplicar del 1 al 10</h1>
+
+  <script>
+      function saltarlinea(){
+    
+       document.write("<br>"); 
+       document.write("<br>"); 
+       document.write("<hr>"); 
+       document.write("<br>");  
+
+      }
+
+      function imprimir(frase){
+    
+         document.write("<hr>"); 
+         document.write("<br>"); 
+         document.write("<big>" + frase + "</big>"); 
+         saltarlinea(); 
+
+      }
+
+    // MEJORA DE LA CALCULADORA ... BY MARCO STEVENSON
+      
+      var numero1 = parseInt( prompt( "Ingrese Tabla de multiplicar ") );
+      var numero2= 1 ;
+        
+      imprimir("MULTIPLICACION CON WHILE");
+
+      while ( numero2 <= 10 ){
+       
+        var multiplicacion = numero1 * numero2;
+        imprimir( numero1 + " X " + numero2 + " = " + multiplicacion );
+        numero2 = numero2 + 1;
+         
+      }
+
+      imprimir("MULTIPLICACION CON FOR");
+
+      for (var numero2 = 1; numero2 <= 10; numero2++) {
+        
+        var multiplicacion = numero1 * numero2 ;
+        imprimir(numero1 + " x " + numero2 + " = " + multiplicacion)
+        
+       }
+
+      //imprimir(multiplicacion);
+
+    </script>  
+
+</head>
