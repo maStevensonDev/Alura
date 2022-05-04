@@ -27,23 +27,38 @@
 
       function sorteo(n){
     
-       return Math.round( Math.random() * 10 )
+       return Math.round( Math.random() * 10)
 
       }
 
       var numeroPensado =  sorteo(10);
-      var numeroLanzado = parseInt( prompt ( "INGRESE UN NUMERO ENTRE 0-10" ) )
+      var intentos = 3;1
+      var contador = 1;
+      
 
-     if ( numeroPensado == numeroLanzado ){
 
-        imprimir( "ADIVINASTE EL NUMERO FELICITACIONES !!!! " )
+      while ( contador <= intentos ) {
+
+        var numeroLanzado = parseInt( prompt ( "INGRESE UN NUMERO ENTRE 0-10" ) );
+
+        if ( numeroPensado == numeroLanzado ){
+
+         
+             alert( "ADIVINASTE EL NUMERO FELICITACIONES !!!! " + " Intento Numero " + contador + " Numero del Sorteo " + numeroPensado)
+             brake;
+         
         
-      }
-      else{
+         }
+         else{
 
-        imprimir( "EL NUMERO QUE PENSASTE ES INCORRECTO...... EL NUMERO REAL ES " + numeroPensado )
+            alert( "EL NUMERO QUE PENSASTE ES INCORRECTO...... " );
+            
 
+        }
+
+       contador++;
       }
+      
           
   </script>  
 

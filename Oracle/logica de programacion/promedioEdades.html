@@ -27,14 +27,15 @@
 
       var miembrosFamilia = parseInt( prompt ( "INGRESA LA CANTIDAD DE MIEMBROS DE TU FAMILIA " ) );
       var contardor = 1;
-      var totalEdad = 0;
+      let totalEdad = 0;
+      
 
       while ( contardor <= miembrosFamilia ) {
 
         
-        edad = parseInt ( prompt ( "INGRESA LAS EDAD DEL FAMILIAR " ) );
-        var totalEdad = totalEdad + edad
-        //var mediaEdades = totalEdad / miembrosFamilia; me da el mismo resultado estando este calculo afuera como dentro del while
+        let edad = parseInt ( prompt ( "INGRESA LAS EDAD DEL FAMILIAR " ) );
+        totalEdad = totalEdad + edad;
+        //let mediaEdades = totalEdad / miembrosFamilia;
         contardor++;
 
       }
@@ -42,6 +43,8 @@
       var mediaEdades = totalEdad / miembrosFamilia;
 
       imprimir( "LA MEDIA DE LAS EDADES ES DE " + mediaEdades );
+
+      console.log(edad);
 
 
     </script>  
