@@ -61,11 +61,30 @@ nav a:hover{
   
 }
 
+.prod li:hover{
+  border-color: #ff7f50;
+  
+
+}
+
+.prod li:active{
+  border-color: darkgreen;
+
+}
+
 h2{
   font-size: 30px;
   font-weight: bold;
-
 }
+
+.prod li:hover h2{
+  font-size: 40px; 
+  -webkit-transition: all 0.5s 0.1s ease;
+  -moz-transition: all 0.5s 0.1s ease;
+  -o-transition: all 0.5s 0.1s ease;
+  transition: all 0.5s 0.1s ease;
+}
+
 
 .prod-desc{
   font-size: 18px;
@@ -78,11 +97,51 @@ h2{
 
 }
 
-/* footer{
- /* height:auto; */
- /* background-color: darkslategrey; */
+footer{
+  text-align: center;
+  background: url(../img/productosbarberia/bg.jpg);
+  padding: 40px; 
+}
 
-.div-footer{
-  height: 100%;
+ .copyright{
+  color: #f0f8ff;
+  font-size: 13px;
+  margin: 20px;
+}
+
+main{
+  background-color: #ff7f50;
+  width: 940px;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
 
 }
+form{
+  margin: 40px 0;
+
+}
+
+form label,form p{
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+
+}
+
+.input-padron{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+  
+}
+.checkbox{
+  margin: 20px 0;
+
+}
+
+
+
+
+
+ 

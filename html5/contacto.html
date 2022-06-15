@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <title>Productos - Barberia </title>
+ </head>
+
+  <body>
+    <header>   
+      <div class="divheader">
+        <h1><img src="img/productosbarberia/logo.png" alt=""></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      
+      <form>
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido">
+
+        <label for="correo">Correo</label>
+        <input type="text" id="correo">
+
+        <label for="celular">Celular</label>
+        <input type="text" id="celular">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="70" rows="10"></textarea>
+
+        <div>
+          <p> Comó desea ser contactado ??...</p>
+
+          <input type="radio" name="contacto" value="email" id="radio-email" class="input-padron">
+          <label for="radio-email">Correo</label>
+          
+          <input type="radio" name="contacto" value="celular" id="radio-cel" class="input-padron">
+          <label for="radio-cel">Celular</label>
+          
+          <input type="radio" name="contacto" value="wsp" id="radio-wsp" class="input-padron">
+          <label for="radio-wsp">Whatsapp</label>
+          
+        </div>
+
+        <label class="checkbox" for="">Le gustaria recibir novedades de la barberia en su correo ??..</label>
+
+        <input type="submit" name="contacto" value="Contactanos" id="btnenviar">
+
+      </form>
+      
+
+    </main>
+ 
+
+    <footer>
+      <div class="div-footer">
+        
+        <img src="img/productosbarberia/logo-blanco.png">
+        <p class="copyright">&copy; Copyright Barberia 2022 </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
