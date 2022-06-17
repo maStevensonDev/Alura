@@ -1,59 +1,201 @@
-body{
-    background-color: aliceblue;
+header{
+  background-color: #BBBBBB
+  
+}
+.divheader{
+  width: 1080px;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.titulo-principal{
-    padding-left: 30px ;
+nav{
+ position: absolute;
+ top: 110px;
+ right: 10px;
 }
 
-#banner{
-    width:100%;
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+ 
 }
 
-.principal{
-    background: #CCCCCC;
-    padding: 20px;
+nav a{
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+ 
+}
+nav a:hover{
+  color: chocolate;
+  /* font-size: 25px; */
+  text-decoration: underline; 
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+  
 }
 
-h2,h3{
-    text-align: center;
-    font-size: 30px;
+.prod{
+  width: auto;
+  margin: 40px auto;
+  padding: 2px;
 }
 
-p{
-    text-align: center;
-    color: rgb(0, 0, 0);
+.prod li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1% ;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  /* border-radius: 5%; */
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
 }
 
-em strong{
-    color:red;
+.prod li:hover{
+  border-color: #ff7f50;
+  
+
 }
 
-#mision{
-    font-size: 20px;
+.prod li:active{
+  border-color: darkgreen;
+
 }
 
-.diferenciales{
-    background: #9b7255;
-    padding: 30px;
+h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.prod li:hover h2{
+  font-size: 40px; 
+  -webkit-transition: all 0.5s 0.1s ease;
+  -moz-transition: all 0.5s 0.1s ease;
+  -o-transition: all 0.5s 0.1s ease;
+  transition: all 0.5s 0.1s ease;
 }
 
 
-.items{
-    font-style: italic;
-    font-size: 20px;
+.prod-desc{
+  font-size: 18px;
 }
 
-ul{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-    
+.prod-precio{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+
 }
 
-.imagenDiferenciales{
-    width: 50%;
-    
+main{
+  /* background-color: #ff7f50; */
+  display: block;
+  width: 940px;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
+  
+}
+form{
+  margin: 40px 0;
+
 }
 
+form label,form legend{
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+
+}
+
+form input {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+
+}
+
+.input-padron{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+  
+}
+.checkbox{
+  margin: 20px 0;
+
+}
+
+footer{
+  text-align: center;
+  background: url(../img/productosbarberia/bg.jpg);
+  padding: 40px;
+
+}
+
+.copyright{
+  color: #f0f8ff;
+  font-size: 13px;
+  margin: 20px;
+  
+}
+
+.enviar{
+  width: 40%;
+  padding: 15px 0 ;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f0f8ff;
+  background-color: #ffa600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: static;
+  transition: 0.2s all;
+  
+}
+
+.enviar:hover{
+  background-color: #fe0808;
+  width: 50%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.758);
+  transform: scale(1.20);
+  /* transform: scale(1.20) rotate(180deg); */
+  
+}
+
+table{
+  margin: 40px 40px;
+}
+
+thead{
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+}
+
+td,th{
+  border: 2px solid black;
+  padding: 15px 15px;
+  
+}
+
+
+
+
+
+
+
+ 
