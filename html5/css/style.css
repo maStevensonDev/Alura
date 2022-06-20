@@ -1,3 +1,7 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 header{
   background-color: #BBBBBB
   
@@ -98,14 +102,6 @@ h2{
 
 }
 
-main{
-  /* background-color: #ff7f50; */
-  display: block;
-  width: 940px;
-  margin: 0 auto;
-  /* background-color: aquamarine; */
-  
-}
 form{
   margin: 40px 0;
 
@@ -142,6 +138,7 @@ footer{
   text-align: center;
   background: url(../img/productosbarberia/bg.jpg);
   padding: 40px;
+  margin: 0px 0 5px 0px;
 
 }
 
@@ -192,6 +189,46 @@ td,th{
   
 }
 
+
+/* PRUEBA DE CAMBIO DE SCROLL BAR */
+
+
+
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;     /* Tamaño del scroll en vertical */
+        height: 15px;    /* Tamaño del scroll en horizontal */
+        background-color: #000000; 
+                         /* Ocultar scroll */
+    }
+
+    /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 30px;
+    }
+
+    /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #b3b3b3;
+        box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Cambiamos el fondo cuando esté en active */
+    .scrollbar::-webkit-scrollbar-thumb:active {
+        background-color: #757575;
+    }
+
+    /* Ponemos un color de fondo y redondeamos las esquinas del track */
+    .scrollbar::-webkit-scrollbar-track {
+        background: #555555;
+        border-radius: 20px;
+    }
+
+    /* Cambiamos el fondo cuando esté en active o hover */
+    .scrollbar::-webkit-scrollbar-track:hover,
+    .scrollbar::-webkit-scrollbar-track:active {
+      background: #555555;
+    }
 
 
 
