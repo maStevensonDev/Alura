@@ -231,6 +231,17 @@ td,th{
     }
 
 
+/* @media screen and (max-width : 480px) {
+  h1{
+    text-align: center;
+  }
+  nav{
+    position: static;
+  }
+   
+ } */
+  
+
 
 
 
