@@ -1,122 +1,179 @@
 
 .banner{ 
-    width: 100%;
+  width: 100%;
 
 }
 
 h2,h3{
-    text-align: center;
-    font-size: 30px;
+  text-align: center;
+  font-size: 30px;
 
 }
 
 p{
   text-align: center;
-  color: rgb(0, 0, 0);
+ color: rgb(0, 0, 0);
 
 }
 
 #mision{
-    font-size: 20px;
+  font-size: 20px;
+  color: lemonchiffon;
 
 }
 
-.diferenciales{
-    background: linear-gradient( #4b4b4b, white );
-    color: white;
-    padding: 3em;
-    margin: 0px 0 5px 0;
-}
 
 .items{
-    font-size: 20px;
-    line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
 
+}
+
+.items::before{
+  content: "★" ;
+  margin-right: 10px;
 }
 
 .items:first-child{
-    font-weight: bold;
+  font-weight: bold;
 
 }
 
 ul{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
     
 }
 
 .herramientas{
-    width: 200px;
-    float: left;
-    margin: 0 40px 0 0 ;
+  width: 200px;
+  float: left;
+  margin: 0 40px 0 0 ;
+  border-radius: 10px;
 }
 
 .mapa{
-    padding: 3em 0;
-    background:linear-gradient(#f5f5dc, black);
+  padding: 3em 0;
+  background:linear-gradient(#f5f5dc, black);
 }
 
 .mapa p{
-    margin: 0 0 2em;
-    text-align: center;
+  margin: 0 0 2em;
+  text-align: center;
 }
 
 .div-mapa{
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
+}
+.diferenciales{
+  background: linear-gradient( #4b4b4b, #f5f5dc );
+  color: white;
+  padding: 3em;
+  margin: 0 0 0 0;
+  /* box-shadow: inset 0 0 34px #7d208c; */
 }
 
 .img-diferenciales{
-    width: 30%;
+  width: 30%;
+  transition: 200ms;
+  box-shadow:  5px 5px 10px 5px black ;
+  /* box-shadow: 10px 10px 30px 2px #7d208c, -10px -10px 30px 2px #7d208c; */
+  border-radius: 10px;
    
+}
+.img-diferenciales:hover{
+  opacity: 0.3;
+
 }
 
 .lista-diferenciales{
-    width: 40%;
-    display: inline-block;
-    /* vertical-align:  */
+  width: 30%;
+  padding: 0 0 0 20%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .titulo-principal{
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
-    clear: left;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 0 1em;
+  clear: left;
+  /* color: rgba(red, green, blue, alpha); */
+  text-shadow: 2px 2px #4b4b4b;
+
+    
 }
+/* .titulo-principal:hover{
+    font-weight: bold;
+}
+
+.titulo-principal::after{
+    content: " **";
+
+}
+
+.titulo-principal::before{
+    content: "** ";
+} */
+
 .principal{
-    background: linear-gradient(#7e7e7e 80%, #4b4b4b); /*se puede invertir los colores en grados ejem (45deg colores aqui) */
-    background: ;
-    color: white;
-    padding: 2em ;
-    text-align: center;
-    font-size: 20px;
+  /* background: linear-gradient(45deg,#7e7e7e 80%, #4b4b4b); se puede invertir los colores en grados ejem (45deg colores aqui) */
+  background: linear-gradient( #ad4f11bb , #4b4b4b);
+  color: rgb(250, 250, 250);
+  padding: 2em ;
+  text-align: center;
+  font-size: 20px;
     
 }
 
 .principal p{
-    margin: 0 0 1em;
-    color: white;
+  margin: 0 0 1em;
+  color: white;
     
 }
 
 .principal em{
-    font-weight: bold;
+  font-weight: bold;
  
 }
 
 .principal strong{
-    font-style: italic;
+  font-style: italic;
 }
 
 .video{
-    width: 560px;
-    margin: 1em auto;
+  width: 560px;
+  margin: 1em auto;
    
 }
+@media screen and (max-width : 1080px) {
 
+   h1{
+    text-align: center;
+    
+   }
+   nav{
+    position: static;
+    
+   }
+   
+    .divheader, .pricipal, .div-mapa, .video{
+      width: auto;
+   }
+   .lista-diferenciales, .img-diferenciales{
+    width: 100%;
 
+   }
+   
+ }
+
+ /* [01:08] Voy a seleccionar aquí el iPhone X por ejemplo y ya teníamos incluso configurado nuestro color rojo con la media query, vamos a ir a nuestro código en nuestro style. Aquí habíamos creado una media query. Recordando que es un recurso para crear excepciones o condiciones y aplicar formatos o estilos diferentes. Y esa es la manera más fácil de trabajar para que una de nuestras páginas sea responsiva, creando algunas condiciones.
+
+[01:38] En este caso habíamos creado la siguiente condición: si el navegador encuentra una página menor o igual a 480 píxeles, va a aplicar estas condiciones. Y ahí solo con fines de ejemplos, habíamos colocado y cambiado nuestro background del body para rojo. Eso lo vamos a eliminar y vamos a volver a nuestra consola del desarrollador y aquí vamos a comenzar a analizar qué elementos son los que necesitamos adaptar. */
 
 
 
