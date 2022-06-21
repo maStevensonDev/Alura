@@ -1,17 +1,29 @@
+/* BODY CLASS */
 .app {
-    background: #f1f1f1;
+    background: #d0cfcf;
+    font-family: Arial, Helvetica, sans-serif;
+    display:grid;
+    grid-template-areas:
+    "header"
+    "contenido" 
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto;
     
 }
 
-.encabezado {
-
+.header {
+    /* background: #00cc99; */
+    grid-area: header;
     
 }
 .contenido {
-
+    /* background: #ff8080; */
+    grid-area: contenido;
 }
 
-.rodapie { 
-
+.footer { 
+    /* background: #0099ff; */
+    grid-area: footer;
     
 }
