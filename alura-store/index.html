@@ -9,13 +9,30 @@
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/destacados.css">
+    <link rel="stylesheet" href="assets/css/populares.css">
 
 
 </head>
 
 <body class="app">
     <header class="header">
-      ENCABEZADO
+      <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a class="menu__link activo" href="#">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a>
+                    <a class="menu__link" href="#">
+                        <i class="fas fa-mobile-alt"></i>
+                        Aplicaciones</a>
+                    <a class="menu__link" href="#">
+                        <i class="fas fa-gamepad"></i>
+                        Juegos
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="contenido">
@@ -64,6 +81,7 @@
                 </ul>
             </div>
         </section>  
+
         <section class="populares">
             <div class="populares__items">
                 <div class="populares__info">
@@ -353,7 +371,7 @@
     </main>
 
     <footer class="footer">
-        FOOTER
+        TODOS LOS DERECHOS RESERVADOS &COPY 2022;
     </footer>
     <script src="./assets/js/fontawesome.all.min.js"></script>
 </body>
