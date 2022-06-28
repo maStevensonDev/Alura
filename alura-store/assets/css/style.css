@@ -14,17 +14,31 @@
 
 .header {
     /* background: #00cc99; */
+    align-items: center;
+    display: flex;
     grid-area: header;
-    
+    padding: 0 2rem;
 }
+
+.menu__link:hover, .menu__linka:active {
+    border-bottom: 2px solid #0073e6;
+}
+
+.menu__link {
+    color: #333333;
+    padding-inline-start: 1rem 1rem;
+}
+
 .contenido {
     /* background: #ff8080; */
     grid-area: contenido;
+    padding: 0 2rem;
 }
 
 .footer { 
-    /* background: #0099ff; */
-    color: white;
+    background: #fdfdfd;
+    color: #333333;
     grid-area: footer;
-    
+    padding: 1rem;
+    text-align: center;  
 }
