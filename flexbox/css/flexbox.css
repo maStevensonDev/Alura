@@ -60,6 +60,18 @@
   flex-direction: column;
 }
 
+.videoSobre-video {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 2;  
+  
+  /* flex-grow: 2; incrementa el espacio entre los 2 obejetos  crecer el flex item*/
+}
+
+
 /* Responsiva  */
 
 @media (max-width:790px) {
@@ -109,6 +121,10 @@
 
   .headerPrincipal-nav-link-app{
     order: -1;
+  }
+  .videoSobre .container {
+    flex-direction: column;
+  
   }
 }
 

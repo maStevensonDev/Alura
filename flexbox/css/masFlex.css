@@ -1,0 +1,64 @@
+.flexContainer:Last-child { margin-top: 2em;}
+body { margin: 20px 0; padding: 0; }
+div { height: 50px; width: 50px; }
+div:nth-child(1) { background-color: red; width: 80px; height: 80px;}
+div:nth-child(2) { background-color: blue; }
+div:nth-child(3) { background-color: green; }
+div:nth-child(4) { background-color: yellow; }
+div:nth-child(5) { background-color: pink; }
+div:nth-child(6) { background-color: black; }
+div:nth-child(7) { background-color: orange; }
+div:nth-child(8) { background-color: silver; }
+
+/* fin de  configuracion  */
+
+/* .flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+} */
+/* 07:12] Bueno, primero no podemos aplicarle un espacio, si no tenemos una altura. ¿Por qué? Recuerden lo que nos pasó en el menú, no podíamos aplicarle un espacio a unos elementos donde ya no tiene para dónde abrirse. Entonces vamos a aplicarle aquí tranquilamente. A está div vamos a colocarle justify-content: space-around.
+
+[07:47] Con eso vamos a generar espacio entre ellos y ahora bien, en esta parte vamos entonces a incrementar nuestra div principal. Sería aquí nuestro flexContainer. Vamos a agregarle aquí, acá salvamos, vamos a actualizar, no pasa nada, ¿qué vamos a hacer ahora? Vamos a aplicarle entonces una altura para que entonces los elementos consigan distribuir el espacio dentro de ellos.
+
+[08:14] O sea vamos a colocarle 800 pixeles por ejemplo, creo que es suficiente, y ahora sí tenemos ese espacio distribuido. Es la misma función ahora en columnas, pero para poder distribuir los elementos necesito crear un espacio entre ellos y ellos pudieran tener una distribución dentro de ese tamaño, de esa altura de la div que hemos colocado. */
+
+
+
+/* flex grow */
+
+.flexContainer {
+  display: flex;
+  /* justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 500px; */
+}
+
+.flexItem {
+  flex-grow: 1;
+  flex-shrink: 0; 
+  /* /* reduce el tamaño de forma proporsional en este caso 2 veces menos * flex shrink/ */
+}
+.primero {
+  /* flex-shrink: 2; */
+  flex-basis: 200px;
+  flex-grow: 0;
+
+  /* flex: 1 0 200px; primero grow segundo shrink tercero basis */
+
+}
+
+
+
+/* Qué sucede con este atributo? Este atributo tiene la particularidad de que va a incrementar de tamaño proporcionalmente al valor que le fue asignado en el espacio que está sobrando de nuestro flexContainer, por ejemplo, tenemos acá este espacio azul, y nuestros elementos están midiendo ahora actualmente tienen una largura de 50 y una altura de 50, qué es lo que tenemos aquí en nuestro código.
+
+[00:49] Cada uno de los elementos tiene una altura y una largura de 50 pixeles. Para yo colocar el flex-grow, simplemente escribo flex-grow: 1. Actualizamos y el espacio que estaba sobrando, ¿cómo lo interpreté el navegador? Él va a agarrar ese espacio, lo va a dividir entre cuatro y le va a asignar un pedazo a cada uno de los items que tengo dentro de mi container. */
+
+
+
+/* .primero {
+  flex-grow: 2;
+} */
