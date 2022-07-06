@@ -18,7 +18,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .institucional__descripcion {
@@ -51,4 +51,35 @@
 
 .institucional__video {
   width: 100vw;
+}
+
+@media screen and (mind-width: 768px){
+  .institucional__contacto-email {
+    display: inline-block;
+  }
+  .institucional__video {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .institucional__contenido {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        
+    }
+
+    .institucional__video {
+        align-self: flex-end;
+
+        width: 375px;
+    }
+
+    .institucional__contacto-email {
+        display: block;
+    }
 }

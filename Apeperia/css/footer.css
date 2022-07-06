@@ -24,6 +24,7 @@
 
 .footer__navegacion {
   color: var(--background-blanco);
+  font: var(--open-sans);
   text-align: center;
   line-height: 3;
 }
@@ -33,4 +34,16 @@
   display: inline-block;
 
   margin: 0 .5rem .7rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer__navegacion {
+        text-align: left;
+        min-width: 600px;
+    }
 }
