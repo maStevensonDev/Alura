@@ -12,7 +12,7 @@
 
 		<header>
 			<div class="container">
-				<h1>Buona Vita Nutrición</h1>
+				<h1 class="titulo">Buona Vita Nutrición</h1>
 			</div>
 		</header>
 		<main>
@@ -73,5 +73,21 @@
 			</section>
 		</main>
 
+
+		<script>
+
+			var titulo=document.querySelector(".titulo");
+			console.log(titulo);
+			console.log(titulo.textContent);
+
+			if ( titulo== titulo ) {
+				alert("EL NOMBRE DE LA PAGINA CAMBIO !!!");
+				titulo.textContent = "Buena vida Nutrición";
+			}
+			
+
+
+		</script>
+		
 	</body>
 </html>
