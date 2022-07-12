@@ -1,0 +1,13 @@
+
+@media screen and(min-width: 0) {
+  .head__logo {
+    display: none;
+  }
+}
+
+
+@media screen and(min-width: 768px) {
+  .head__logo {
+    justify-content: block;
+  }
+}
