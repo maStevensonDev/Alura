@@ -41,6 +41,7 @@
 }
 
 .banner__img {
+  background: url(../img/banner.jpg) no-repeat center / cover;
   width: 100%;
   height: calc(100vh - 72px);
 }
