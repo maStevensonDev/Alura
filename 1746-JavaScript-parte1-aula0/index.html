@@ -19,7 +19,7 @@
 			<section class="container">
 				<h2>Mis pacientes</h2>
 				<table>
-					<thead>
+					<thead class="info">
 						<tr>
 							<th>Nombre</th>
 							<th>Peso(kg)</th>
@@ -29,10 +29,10 @@
 						</tr>
 					</thead>
 					<tbody id="tabla-pacientes">
-						<tr class="paciente">
+						<tr class="paciente" id="primer__paciente">
 							<td class="info-nombre">Pablo</td>
-							<td class="info-peso">100</td>
-							<td class="info-altura">2.00</td>
+							<td class="info-peso">-100</td>
+							<td class="info-altura">3.00</td>
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
 						</tr>
@@ -74,19 +74,7 @@
 		</main>
 
 
-		<script>
-
-			var titulo=document.querySelector(".titulo");
-			console.log(titulo);
-			console.log(titulo.textContent);
-
-			if ( titulo== titulo ) {
-				alert("EL NOMBRE DE LA PAGINA CAMBIO !!!");
-				titulo.textContent = "Buena vida Nutrición";
-			}
-			
-
-
+		<script src="js/principal.js">
 		</script>
 		
 	</body>
