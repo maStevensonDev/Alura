@@ -6,51 +6,65 @@
 
 // console.log("ESTOY IMPRIMENDO UNA FUENTE EXTERNA QUE");
 
-// ---------------------------------------------------------------------
-
-// var info = document.querySelector(".info");
-
-var paciente = document.querySelector("#primer__paciente");
-
-var tdPeso = paciente.querySelector(".info-peso");
-var peso = tdPeso.textContent;
-
-var tdAltura = paciente.querySelector(".info-altura");
-var altura = tdAltura.textContent;
-
-var tdIMC = paciente.querySelector(".info-imc");
+// ------------------------------------------------------------------
 
 
 
-tdIMC.textContent = imc;
-
-pesoEsValido = true;
-
-altuarEsValida = true;
 
 
+var pacientes = document.querySelectorAll( ".paciente" );
+console.log( pacientes );
 
-if ( ( peso < 0 ) || ( peso > 1000 ) ) {
-  console.log( "Peso Incorrecto" );
-  tdPeso.textContent = ( peso + " Peso Incorrecto" );
-  tdIMC.textContent = "IMC Incorrecto";
-  pesoEsValido = false;
-}
 
-if ( ( altura < 0 ) || ( altura > 2.50 ) ) {
-  console.log( "Altura Incorrecto" );
-  tdAltura.textContent = ( altura + " Altura Incorrecta" );
-  tdIMC.textContent = "IMC Incorrecto";
-  altuarEsValida = false;
-}
+for (let i = 0; i < pacientes.length; i++) {
+  const paciente = pacientes[i];
 
-if ( pesoEsValido && altuarEsValida ) {
-  var imc = peso / (altura * altura);
+  var tdPeso = paciente.querySelector( ".info-peso" );
+  var peso = tdPeso.textContent;
+
+  var tdAltura = paciente.querySelector( ".info-altura" );
+  var altura = tdAltura.textContent;
+
+  var tdIMC = paciente.querySelector( ".info-imc" );
+
+
+
   tdIMC.textContent = imc;
+
+  pesoEsValido = true;
+
+  altuarEsValida = true;
+
+
+
+  if ((peso < 0) || (peso > 1000)) {
+    console.log( "Peso Incorrecto" );
+    tdPeso.textContent = ( " Peso Incorrecto" );
+    tdIMC.textContent = "IMC Incorrecto";
+    pesoEsValido = false;
+    // paciente.style.color = "red"; // colocar el error en color lightcoral
+    // paciente.style.backgroundColor = "lightcoral"
+    // paciente.style.backgroundColor = "#b54444";
+    // paciente.style.color = "white";
+    paciente.classList.add( "paciente__incorrecto" );
+  }
+
+  if ((altura < 0) || (altura > 2.50)) {
+    console.log( "Altura Incorrecto" );
+    tdAltura.textContent = ( "Altura Incorrecta" );
+    tdIMC.textContent = "IMC Incorrecto";
+    altuarEsValida = false;
+    paciente.classList.add( "paciente__incorrecto" ); // paciente__incorrecto esta en el css y se importo al js para mejor mantenimiento
+  }
+
+  if ( pesoEsValido && altuarEsValida ) {
+    var imc = peso / ( altura * altura );
+    // tdIMC.textContent = Math.round( imc ); 1 opcion
+    tdIMC.textContent = imc.toFixed(1); //cantidad de decimales
+    
+  }
+
 }
-
-
-
 
 
 

@@ -130,5 +130,11 @@ button[disabled=disabled], button:disabled {
 }
 
 .campo-invalido{
-	border: 1px solid red;
+	border: 1px solid #ff0000;
+}
+
+
+.paciente__incorrecto {
+	background-color: #b54444;
+	color: whitesmoke;
 }
