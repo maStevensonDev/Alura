@@ -5,6 +5,7 @@
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	background: #b0b0b0;
 }
 
 header{
@@ -54,8 +55,7 @@ section h2{
 table{
 	width: 100%;
 	margin-bottom : .5em;
-    table-layout: fixed;
-
+  table-layout: fixed;
 }
 
 td, th {
@@ -108,10 +108,9 @@ button{
 	background-color:#0c8cd3;
 	border-color: #04324c;
 	width: 20%;
-    display: block;
-    clear: both;
-    margin: 10px 0px;
-
+  display: block;
+  clear: both;
+  margin: 10px 0px;
 }
 
 button:active{
@@ -119,22 +118,26 @@ button:active{
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
-    background-color: gray;
-	border-color: darkgray;
+button:hover  {
+	background: #04324c;
+	border-color: #021927;
+}
 
+button[disabled=disabled], button:disabled {
+  background-color: gray;
+	border-color: darkgray;
 }
 
 .adicionar-paciente{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .campo-invalido{
 	border: 1px solid #ff0000;
 }
 
-
 .paciente__incorrecto {
 	background-color: #b54444;
 	color: whitesmoke;
 }
+
