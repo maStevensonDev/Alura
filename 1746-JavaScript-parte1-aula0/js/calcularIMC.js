@@ -6,7 +6,7 @@
 
 // console.log("ESTOY IMPRIMENDO UNA FUENTE EXTERNA QUE");
 
-function calcularIMC( peso,altura ) {
+function calcularIMC( peso, altura ) {
   var imc = peso / ( altura * altura );
   return imc.toFixed(2);
 
@@ -27,10 +27,10 @@ for (let i = 0; i < pacientes.length; i++) {
 
   tdIMC.textContent = calcularIMC( peso, altura );
 
-  pesoEsValido = true;
-  altuarEsValida = true;
+  pesoEsValido = validarPeso( peso );
+  altuarEsValida = validarAltura ( altura );
 
-  if ((peso < 0) || (peso > 1000)) {
+  if ( !pesoEsValido ) {
     console.log( "Peso Incorrecto" );
     tdPeso.textContent = ( " Peso Incorrecto" );
     tdIMC.textContent = "IMC Incorrecto";
@@ -42,7 +42,7 @@ for (let i = 0; i < pacientes.length; i++) {
     paciente.classList.add( "paciente__incorrecto" );
   }
 
-  if ((altura < 0) || (altura > 2.50)) {
+  if ( !altuarEsValida ) {
     console.log( "Altura Incorrecto" );
     tdAltura.textContent = ( "Altura Incorrecta" );
     tdIMC.textContent = "IMC Incorrecto";
@@ -52,11 +52,28 @@ for (let i = 0; i < pacientes.length; i++) {
 
   if ( pesoEsValido && altuarEsValida ) {
     // tdIMC.textContent = Math.round( imc ); 1 opcion
-    tdIMC.textContent = calcularIMC( peso,altura ); //cantidad de decimales
+    tdIMC.textContent = calcularIMC( peso, altura ); //cantidad de decimales
   }
 
 }
 
+function validarPeso( peso ) {
+   if ( ( peso >= 0 ) && ( peso < 1000 ) ) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+function validarAltura( altura ) {
+  if ( ( altura >= 0 ) && ( altura < 2.50 ) ) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
 
 
 
