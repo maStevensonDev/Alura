@@ -8,13 +8,18 @@ botonAgregar.addEventListener( "click", function ( event ) { //funcion anonima q
   var tabla = document.querySelector( "#tabla-pacientes" );
   var pacienteTr = construirTr(paciente);
 
-  if ( !validarPaciente( paciente ) ) {
-    console.log("Paciente Incorrecto");
+  var errores = validarPaciente( paciente );
+  if ( errores.length > 0 ) {
+    agregarMensajesErrores( errores );
     return;
   }
   //validar Paciente
   tabla.appendChild(pacienteTr);
   form.reset();
+
+  var mensajesErrores = document.querySelector( "#mensaje__error" );
+  mensajesErrores.innerHTML = "";
+
 } );
 
 function capturarDatosPaciente(form) {
@@ -58,11 +63,38 @@ function construirTd( dato, clase ) {
   return td;
 }
 
-function validarPaciente( paciente ) {
-  if ( validarPeso( paciente.peso ) ) {
-    return true;
+function validarPaciente( paciente ) { 
+  var errores = [] ;
+
+   if ( paciente.nombre.length == 0 ) {
+    errores.push( "EL CAMPO NOMBRE ESTA VACIO" );
   }
-  else {
-    return false;
+  if ( paciente.peso.length == 0 ) {
+    errores.push( "EL CAMPO PESO ESTA VACIO" );
   }
+  if ( paciente.altura.length == 0 ) {
+    errores.push( "EL CAMPO ALTURA ESTA VACIO" );
+  }
+  if ( paciente.gordura.length == 0 ) {
+    errores.push( "EL CAMPO GORDURA ESTA VACIO" );
+  }
+
+  if ( !validarPeso( paciente.peso ) ) {
+    errores.push( "EL PESO ES INCORRECTO" );
+  }
+  if ( !validarAltura( paciente.altura ) ) {
+    errores.push( "LA ALTURA ES INCORRECTA" );
+  }
+  return errores;
+}
+
+function agregarMensajesErrores( errores ) {
+  var ul = document.querySelector( "#mensaje__error" );
+  ul.innerHTML = "";
+  errores.forEach(function( error ){
+    var li = document.createElement( "li" );
+    li.textContent = error;
+    ul.appendChild( li );
+  });
+
 }
