@@ -14,13 +14,20 @@ botonAgregar.addEventListener( "click", function ( event ) { //funcion anonima q
     return;
   }
   //validar Paciente
-  tabla.appendChild(pacienteTr);
+  adicionarPaciente( paciente );
   form.reset();
 
   var mensajesErrores = document.querySelector( "#mensaje__error" );
   mensajesErrores.innerHTML = "";
 
 } );
+
+function adicionarPaciente( paciente ){
+  var pacienteTr = construirTr( paciente );
+  var tabla = document.querySelector( "#tabla-pacientes" );
+  tabla.appendChild(pacienteTr);
+}
+
 
 function capturarDatosPaciente(form) {
   //capturando los datos del formulario

@@ -4,10 +4,10 @@ var pacientes = document.querySelectorAll( ".paciente" );
 var tabla = document.querySelector( "#tabla-pacientes" );
 //evento para eliminar cualquier paciente que estan en la tabla con doble click
 tabla.addEventListener( "dblclick" , function(){
-  event.target.parentNode.classList.add("fadeOut");
+  event.target.parentNode.classList.add( "fadeOut" );
   // event.target.parentNode.remove();
   setTimeout(function() {
-    event.target.parentNode.remove();
+    event.target.parentNode.classList.remove( "fadeOut" );
   },500);
 });
 
